@@ -1,0 +1,118 @@
+.App {
+  font-family: sans-serif;
+}
+
+.board {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 600px;
+}
+
+.images {
+  position: absolute;
+  display: flex;
+  background-image: url("./images/snake-1.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100px 380px;
+  background-color: transparent;
+  width: 100px;
+  top: 15px;
+  left: 150px;
+  height: 400px;
+  align-self: flex-start;
+  transform: rotate(-30deg);
+}
+
+.images-2 {
+  position: absolute;
+  display: flex;
+  background-image: url("./images/ladder-2.jpeg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100px 380px;
+  background-color: transparent;
+  width: 80px;
+  top: 32px;
+  right: 230px;
+  height: 500px;
+  align-self: flex-start;
+  transform: rotate(-20deg);
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  z-index: 1;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.col {
+  width: 60px;
+  padding-top: 20px;
+  height: 60px;
+
+  display: flex;
+  text-align: center;
+  background: transparent;
+  justify-content: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.col.isActive {
+  border-radius: 50%;
+  color: #fff;
+}
+.col.A {
+  background-color: red;
+}
+
+.col.B {
+  background-color: pink;
+  color: black;
+}
+
+.dice-box {
+  height: 200px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.active-player {
+  color: blue;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btn-roll-dice {
+  background-color: darkgray;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  text-shadow: none;
+  border: 0px;
+  color: white;
+}
+.btn-roll-dice.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dice-value {
+  margin-top: 5px;
+}
+
+.icon {
+  color: red;
+}
